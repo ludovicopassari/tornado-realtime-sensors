@@ -7,8 +7,6 @@ uri="ws://localhost:8888/sensors"
 async def main():
     ws = await websocket_connect(uri)
     while True:
-        
-
         str = await ws.read_message()
         print(str)
 
